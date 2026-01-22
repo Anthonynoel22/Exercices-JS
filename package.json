@@ -1,0 +1,21 @@
+{
+  "name": "exercices-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercices.js",
+  "scripts": {
+    "test": "node exercices.js",
+    "dev": "node --watch exercices.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anthonynoel22/Exercices-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anthonynoel22/Exercices-JS/issues"
+  },
+  "homepage": "https://github.com/Anthonynoel22/Exercices-JS#readme"
+}
