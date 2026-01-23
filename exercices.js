@@ -98,6 +98,127 @@ console.log("Ville", city);
 
 }
 
+// conditions
+
+function exo8() {
+console.log("=== Exercice 8 - Saison ===");
+
+const mois = 12;
+
+if (mois >= 3 && mois <= 5) {
+    console.log("printemps");
+    }
+else if (mois >= 6 && mois <= 8) {
+    console.log("été");
+    }
+else if (mois >= 9 && mois <= 11) {
+    console.log("automne");
+    }
+else  {
+    console.log("hiver");
+    }
+}
+
+function exo9() {
+console.log("=== Exercices 9 - Prix TTC ===");
+
+const prixHT = 7;
+const tva = 10;
+
+const prixTTC = prixHT * (1 +tva/100)
+
+console.log("Prix TTC:", prixTTC);
+
+}
+
+function exo10() {
+console.log("=== Exercices 10 - Jour ouvrable ===");
+
+const jour = 3;
+const jours = ["", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+/* if (jour >= 1 && jour <= 5) {
+    console.log("ouvrable");
+    }
+else  {
+    console.log("Week-end");
+    } */
+
+console.log("C'est", jours[jour], "-", jour <= 5 ? "ouvrable" : "week-end");
+
+}
+
+function exo11() {
+console.log("=== Exercices 11 - Note finale ===");
+
+const moyenne = 15/20 * 20;
+
+if (moyenne > 16) {
+    console.log("Excellent");
+    }
+else if (moyenne > 14) {
+    console.log("Très bien");
+    }
+else if (moyenne > 12) {
+    console.log("Bien");
+    }
+else if (moyenne > 10) {
+    console.log("Passable");
+    }
+else {
+    console.log("Recalé"); 
+    }
+}
+
+function exo12() {
+console.log("=== Exercices 12 - Mot de passe ===");
+
+const mdp = "MonPass";
+
+const assezLong = mdp.length >= 8;
+const unChiffre = mdp.match(/\d/);
+const uneMajuscule = mdp.match(/[A-Z]/);
+
+if (assezLong && unChiffre && uneMajuscule) {
+    console.log("Mot de passe valide");
+    }
+else {
+    console.log("Mot de passe invalide");
+    }
+}
+
+//concaténation
+
+function exo13() {
+console.log("=== Exercices 13 - Bonjour");
+
+/* function Bonjour(prenom, age) {
+console.log("Bonjour " + prenom + ", tu as " + age + "ans." );
+
+} */
+
+function Bonjour(prenom, age) {
+    console.log(`Bonjour ${prenom}, tu as ${age} ans.`);
+}
+
+Bonjour("Marie", 25);
+}
+
+
+function exo14() {
+console.log("=== Exercices 14 - Nom Complet");
+
+const produit = "pomme";
+const prix = 2.5;
+
+console.log(`Les ${produit} coûtent ${prix}€ au kilo`);
+
+
+
+    
+
+
+}
 
 // exo1();
 //exo2();
@@ -106,6 +227,10 @@ console.log("Ville", city);
 //exo5();
 //exo6();
 //exo7();
-
-
-
+//sexo8();
+//exo9();
+//exo10();
+//exo11();
+//exo12();
+//exo13();
+//exo14();
