@@ -213,10 +213,50 @@ const prix = 2.5;
 
 console.log(`Les ${produit} coûtent ${prix}€ au kilo`);
 
+}
 
+// map
 
-    
+function exo15() {
+console.log("=== Exercices 15 - Doubler les nombres ===");
 
+const nums = [1, 2, 3, 4];
+
+const result = nums.map(n => n * 2);
+
+console.log(result);
+
+}
+
+function exo16() {
+console.log( "=== Exercices 16 - Mettre en majuscules ===");
+
+const  prenoms = ["ali", "maria", "paul"];
+
+const majuscules = prenoms.map (p => p.toUpperCase())
+
+console.log(majuscules);
+
+}
+
+function exo17() {
+console.log("=== Exercices 17 - Ajouter un préfixe");
+
+const fruits = ["pomme", "banane", "kiwi"];
+
+const prefixed = fruits.map (f => "Fruit:" + f);
+
+console.log(prefixed);
+
+} 
+
+function exo18() {
+console.log("=== Exercices 18 - Longeurs des mots ===");
+
+const mots = ["chats", "javascript", "map"];
+const longeurs = mots.map (mot => mot.length);
+
+console.log(longeurs);
 
 }
 
@@ -234,3 +274,7 @@ console.log(`Les ${produit} coûtent ${prix}€ au kilo`);
 //exo12();
 //exo13();
 //exo14();
+//exo15();
+//exo16();
+//exo17();
+exo18();
